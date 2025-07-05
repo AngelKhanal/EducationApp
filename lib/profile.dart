@@ -6,7 +6,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("WELCOME TO THE PROFILE PAGEE"),
+      body: Text("WELCOME TO THE PROFILE PAGE"),
     );
   }
 }

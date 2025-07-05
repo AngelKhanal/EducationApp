@@ -26,7 +26,7 @@ class _HomescreenState extends State<Homescreen> {
       ),
       drawer: Drawer(
         child: ListView(
-          padding: EdgeInsets.zero,
+          padding: EdgeInsets.all(0),
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(color: Colors.blue),
@@ -37,7 +37,7 @@ class _HomescreenState extends State<Homescreen> {
               title: const Text("Home"),
 
               onTap: () {
-                Navigator.pop(context, "You are on  the home page");
+                Navigator.pop(context, "You are on the home page");
               },
             ),
             ListTile(
@@ -77,7 +77,7 @@ class _HomescreenState extends State<Homescreen> {
               ),
             ),
             title: Text(
-              "NAMTSE, bijaya!",
+              "NAMATSE, bijaya!",
               style: TextStyle(
                 color: const Color.fromARGB(255, 0, 0, 0),
                 fontWeight: FontWeight.bold,
@@ -124,15 +124,15 @@ class _HomescreenState extends State<Homescreen> {
                   route: '/report',
                 ),
                 ActionButton(
-                  title: "Syllbus",
-                  subtitle: "Syullbus for all department",
+                  title: "Syllabus",
+                  subtitle: "Syllabus for all department",
                   colors: Colors.blue,
                   logo: Icons.school,
                   route: '/scan',
                 ),
                 ActionButton(
                   title: "old question",
-                  subtitle: "",
+                  subtitle: "Past Question of all Faculties",
                   colors: Colors.purple,
                   logo: Icons.assignment,
                   route: '/map',
